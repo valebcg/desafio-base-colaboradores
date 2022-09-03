@@ -8,6 +8,11 @@ function App() {
   const [name, setName]= useState ("")
   
 const captureInput= (e) => {
+  if (email === "" || name === "") {
+    alert("No has rellenado los campos")
+    return
+    }
+
   setArray([
     ...array,
 {nombre: name,correo: email},
